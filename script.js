@@ -7,10 +7,6 @@ function addToDo(){
     parent.appendChild(el);
     count++;
 }
-const h1El = document.querySelectorAll("h1");
-console.log(h1El[0].innerHTML);
-console.log(h1El[1].innerHTML);
-console.log(document.querySelector("#in").innerHTML);
 
 function Delete(index){
     const element = document.getElementById("ToDo-" + index);
