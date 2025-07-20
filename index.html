@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Plan your day to be hassle free</h1>
+    <h1>Do what you want to do with TO DO</h1>
+        <div id="add">
+            <input type="text" placeholder="Add to the list"></input>
+            <button onclick="addToDo()">Add ToDo</button>
+        </div>
+        <div id="TODOs">
+            <div id="ToDo-1" class="ToDo">
+                <h4 id="text1">Press Done to mark complete</h4>
+                <button onclick="Delete(1)">Delete</button>
+                <button onclick="Completed(1)">Done!</button>
+            </div>
+            <div id="ToDo-2" class="ToDo">
+                <h4 id="text2">Press Delete to remove task</h4>
+                <button onclick="Delete(2)">Delete</button>
+                <button onclick="Completed(2)">Done!</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
