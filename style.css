@@ -21,7 +21,8 @@ html, body{
 
 .text{
     text-decoration: line-through;
-    background-color: green;
+    background-color:chartreuse;
+    color: grey;
 }
 
 
