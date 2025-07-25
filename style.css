@@ -11,14 +11,27 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:#0F0F0F;
+    color:black;
 }
 
 .ToDo{
     display: flex;
     flex-direction: row;
     margin: 5px 5px;
+    justify-content:space-between;
 }
 
+
+.left{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
 .text{
     text-decoration: line-through;
     background-color:chartreuse;
@@ -31,6 +44,50 @@ html, body{
 }
 button{
     margin-left: 5px;
-    background-color:darkorange;
-    padding: 5px;
+    background-color:#1F1F1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    margin-right: 5px;
+}
+
+button img {
+    height: 20px;
+    width: 20px;
+}
+
+#TODOs{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:#00FFC6;
+    margin-top: 5px;
+    height:max-content;
+    width:700px;
+}
+
+#Top{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 8px 8px;
+    background-color: #00FFC6;
+}
+
+input{
+    background-color:#1F1F1F;
+    border: none;
+    border-radius: 10px;
+    color:#00FFC6;
+}
+
+button:hover{
+    color: #00FFC6;
 }

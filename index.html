@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Plan your day to be hassle free</h1>
-    <h1>Do what you want to do with TO DO</h1>
+    <div id="Top">
+        <h1>Plan your day to be hassle free</h1>
+        <h1>Do what you want to do with TO DO</h1>
         <div id="add">
             <input type="text" placeholder="Add to the list"></input>
             <button onclick="addToDo()">Add ToDo</button>
         </div>
+    </div>
         <div id="TODOs">
-            <div id="ToDo-1" class="ToDo">
-                <h4 id="text1">Press Done to mark complete</h4>
-                <button onclick="Delete(1)">Delete</button>
-                <button onclick="Completed(1)">Done!</button>
-            </div>
-            <div id="ToDo-2" class="ToDo">
-                <h4 id="text2">Press Delete to remove task</h4>
-                <button onclick="Delete(2)">Delete</button>
-                <button onclick="Completed(2)">Done!</button>
+            <div id="ToDo--1" class="ToDo">
+                <div class="left">
+                    <button onclick="Completed(-1)">
+                    <img src="./images/tick_icon.png" alt="Done">
+                    </button>
+                    <h4 id="text-1">Press tick to mark complete and cross button to delete the task</h4>
+                </div>
+                <div class="right">
+                    <button onclick="Delete(-1)">
+                        <img src="./images/cross_icon.png" alt="Delete">
+                    </button>
+                </div> 
             </div>
         </div>
     <script src="script.js"></script>
